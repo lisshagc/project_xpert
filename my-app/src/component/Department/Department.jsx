@@ -4,6 +4,7 @@ import HeaderNav  from '../HeaderNav';
 import FooterNav from '../FooterNav';
 import DepartmentContent from './DepartmentContent';
 import Navbar from '../Navbar';
+import DepartmentCreate from './DepartmentCreate';
 
 function Department() {
     return (
@@ -18,10 +19,13 @@ function Department() {
               <div className="row" id="Headernav">
                 <HeaderNav />
               </div>
-              <div id="Dashboard" className="row mt-5">
+              <div id="departmentcontent" className="row mt-5">
                 <DepartmentContent />              
               </div>
-              
+              {/* <div id="departmentcreate" className="row mt-5">
+                <DepartmentCreate />              
+              </div>
+               */}
               <div className="row mt-5" id="Footer" >
                 
                 <FooterNav />

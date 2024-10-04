@@ -1,7 +1,12 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 function DepartmentDetails() {
+    const { id } = useParams();
     return (
+
+
+        
       <div>
         <div class="container-fluid p-0">
     <h1 class="h3 mb-3"><strong>ViewDepartment</strong></h1>

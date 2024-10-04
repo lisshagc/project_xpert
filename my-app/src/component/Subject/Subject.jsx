@@ -6,11 +6,6 @@ import Navbar from '../Navbar';
 
 function Subject() {
     return (
-      // <div>
-      //   <Login />
-      // </div>
-  
-      
       
         <div className="App">
         <div className="container-fluid">

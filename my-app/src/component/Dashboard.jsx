@@ -24,7 +24,7 @@ function Dashboard() {
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col mt-0">
-                                        <h5 class="card-title">NoOfStudents</h5>
+                                        <h5 class="card-title">No Of Students</h5>
                                     </div>
 
                                     <div class="col-auto">
@@ -36,7 +36,7 @@ function Dashboard() {
                                 <h1 class="mt-1 mb-3">770</h1>
                                 <div class="mb-0">
                                     <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 2% </span>
-                                    <span class="text-muted">SinceLastWeek</span>
+                                    <span class="text-muted">Since Last Week</span>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ function Dashboard() {
                                 <h1 class="mt-1 mb-3">345</h1>
                                 <div class="mb-0">
                                     <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
-                                    <span class="text-muted">SinceLastWeek</span>
+                                    <span class="text-muted">Since Last Week</span>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ function Dashboard() {
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col mt-0">
-                                        <h5 class="card-title">NoOfTeachers</h5>
+                                        <h5 class="card-title">No OfT eachers</h5>
                                     </div>
 
                                     <div class="col-auto">
@@ -78,7 +78,7 @@ function Dashboard() {
                                 <h1 class="mt-1 mb-3">120</h1>
                                 <div class="mb-0">
                                     <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 1.5% </span>
-                                    <span class="text-muted">SinceLastWeek</span>
+                                    <span class="text-muted">Since Last Week</span>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ function Dashboard() {
                                 <h1 class="mt-1 mb-3">150</h1>
                                 <div class="mb-0">
                                     <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> 1% </span>
-                                    <span class="text-muted">SinceLastWeek</span>
+                                    <span class="text-muted">Since Last Week</span>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ function Dashboard() {
             <div class="card flex-fill w-100">
                 <div class="card-header">
 
-                    <h5 class="card-title mb-0">PassPercentage</h5>
+                    <h5 class="card-title mb-0">Pass Percentage</h5>
                 </div>
                 <div class="card-body py-3">
                     <div class="chart chart-sm">
@@ -128,7 +128,7 @@ function Dashboard() {
             <div class="card flex-fill w-100">
                 <div class="card-header">
 
-                    <h5 class="card-title mb-0">TopCourses</h5>
+                    <h5 class="card-title mb-0">Top Courses</h5>
                 </div>
                 <div class="card-body d-flex">
                     <div class="align-self-center w-100">
@@ -162,8 +162,8 @@ function Dashboard() {
         <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
             <div class="card flex-fill w-100">
                 <div class="card-header">
-                    <h5 class="card-title">PassFailCount</h5>
-                    <h6 class="card-subtitle text-muted">PassFailCountDesc</h6>
+                    <h5 class="card-title">Pass Fail Count</h5>
+                    <h6 class="card-subtitle text-muted">Pass Fail Count</h6>
                 </div>
                 <div class="card-body">
                     <div class="chart">
@@ -197,14 +197,14 @@ function Dashboard() {
             <div class="card flex-fill">
                 <div class="card-header">
 
-                    <h5 class="card-title mb-0">CourseStatus</h5>
+                    <h5 class="card-title mb-0">Course Status</h5>
                 </div>
                 <table class="table table-hover my-0">
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th class="d-none d-xl-table-cell">StartDate</th>
-                            <th class="d-none d-xl-table-cell">EndDate</th>
+                            <th class="d-none d-xl-table-cell">Start Date</th>
+                            <th class="d-none d-xl-table-cell">End Date</th>
                             <th>Status</th>
                             <th class="d-none d-md-table-cell">Assignee</th>
                         </tr>
@@ -274,7 +274,7 @@ function Dashboard() {
             <div class="card flex-fill w-100">
                 <div class="card-header">
 
-                    <h5 class="card-title mb-0">MonthlyAccessCount</h5>
+                    <h5 class="card-title mb-0">Monthly Access Count</h5>
                 </div>
                 <div class="card-body d-flex w-100">
                     <div class="align-self-center chart chart-lg">

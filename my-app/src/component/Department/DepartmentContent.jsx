@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../Light.css';
 import { useNavigate } from 'react-router-dom'; 
 
 
 
 function DepartmentContent() {
-
+    const items = [{id: 123}];
     const navigate = useNavigate(); // Initialize useNavigate
 
     const handleDepartDetailsClick = () => {
@@ -48,9 +49,10 @@ function DepartmentContent() {
                                 <td> 10-09-2024</td>
                                 <td> 10-09-2024</td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="Id">Edit"</a> |
-                                    <a asp-action="Details" asp-route-id="Id">View</a> |
-                                    <a asp-action="Delete" asp-route-id="Id">Delete</a>
+                                    <Link to={`/dedit/${123}`}>Edit</Link> |
+                                    <Link to={`/dview/${123}`}>View</Link> |
+                                    <Link to={`/ddelete/${123}`}>Delete</Link> 
+                                    
                                 </td>
                             </tr>
                         }

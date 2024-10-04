@@ -5,7 +5,7 @@ import FooterNav from '../FooterNav';
 import StudentContent from './StudentContent';
 import Navbar from '../Navbar';
 
-function Department() {
+function Student() {
     return (
       
         <div className="App">
@@ -34,4 +34,4 @@ function Department() {
     );
   }
   
-  export default Department;
+  export default Student;

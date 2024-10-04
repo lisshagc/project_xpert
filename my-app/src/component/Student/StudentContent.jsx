@@ -5,18 +5,18 @@ function StudentContent() {
         <div>
             <div class="container-fluid p-0">
 
-                <h1 class="h3 mb-3"><strong>@Localizer["StudentList"]</strong></h1>
+                <h1 class="h3 mb-3"><strong>Student List</strong></h1>
 
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-primary me-md-2">AddStudent</button>
+                                    <button class="btn btn-primary me-md-2">Add Student</button>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <table id="datatables-reponsive" class="table table-striped" style="width:100%">
+                                <table id="datatables-reponsive" class="table table-striped" style={{width: '100%'}}>
                                     <thead>
                                         <tr>
                                             <th>FirstName</th>
@@ -59,7 +59,7 @@ function StudentContent() {
                     </div>
                 </div>
             </div>
-        </div><div class="modal fade" id="sizedModalSm" tabindex="-1" style="display: none;" aria-hidden="true">
+        </div><div class="modal fade" id="sizedModalSm" tabindex="-1" style={{ display: 'none' }} aria-hidden="true">
                 <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                         <div class="modal-header">

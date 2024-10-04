@@ -1,7 +1,17 @@
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
 import '../Light.css';
 
 function SubjectContent(){
+    const navigate = useNavigate(); // Initialize useNavigate
+
+    const handleSubDetailsClick = () => {
+    navigate('/subjectdetails'); // Redirect to the Home page on click
+
+
+    
+    }
     return (
         <div>
             <div class="container-fluid p-0">
@@ -13,7 +23,7 @@ function SubjectContent(){
         <div class="card">
             <div class="card-header">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary me-md-2" >AddSubject</button>
+                    <button class="btn btn-primary me-md-2" onClick={handleSubDetailsClick}   >AddSubject</button>
                 </div>
             </div>
             <div class="card-body">
@@ -40,9 +50,9 @@ function SubjectContent(){
                                 <td>11-09-2024</td>
                                 <td>11-09-2024</td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="Id">Edit</a> |
-                                    <a asp-action="Details" asp-route-id="Id">View</a> |
-                                    <a asp-action="Delete" asp-route-id="Id">Delete</a>
+                                    <Link to={`/subedit/${123}`}>Edit</Link> |
+                                    <Link to={`/subview/${123}`}>View</Link> |
+                                    <Link to={`/subdelete/${123}`}>Delete</Link> 
                                 </td>
                             </tr>
                         }

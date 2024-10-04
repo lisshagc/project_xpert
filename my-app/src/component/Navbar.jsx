@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Department from './Department/Department';
 import avatarImage from '../img/avatars/avatar-6.jpg'; 
 
+
 function Navbar({  }) {
 
     const navigate = useNavigate(); // Initialize useNavigate
@@ -32,6 +33,28 @@ function Navbar({  }) {
         navigate('/adminuser'); // Redirect to the teacher page
       };
 
+      const handleStudentClick = () => {
+        navigate('/student'); // Redirect to the teacher page
+      };
+
+      const handleEnrollCourseClick = () => {
+        navigate('/enrollcourse'); // Redirect to the teacher page
+      };
+
+      const handleCoursesClick = () => {
+        navigate('/courses'); // Redirect to the teacher page
+      };
+
+      const handleExamsClick = () => {
+        navigate('/exams'); // Redirect to the teacher page
+      };
+
+      const handleSetupClick = () => {
+        navigate('/setup'); // Redirect to the teacher page
+      };
+
+
+
   return (
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
@@ -41,14 +64,14 @@ function Navbar({  }) {
 
         <div class="sidebar-user">
             <div class="d-flex justify-content-center">
-                <div class="flex-shrink-0">
-                    <img src={avatarImage} class="avatar img-fluid rounded me-1" alt="" id="imagePic" />
+                <div class="flex-shrink-0" >
+                    <img src={avatarImage} class="avatar img-fluid rounded me-1" alt="" id="imagePic"  />
                 </div>
                 <div class="flex-grow-1 ps-2">
-                    <a class="sidebar-user-title dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <a class="sidebar-user-title dropdown-toggle" href="#" data-bs-toggle="dropdown"   >
                         Lissha
                     </a>
-
+                    
                     <div class="dropdown-menu dropdown-menu-start">
                         <a class="dropdown-item" href="/profile"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
                         <div class="dropdown-divider"></div>
@@ -60,9 +83,13 @@ function Navbar({  }) {
                         <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Logout">Logout</a>
                     </div>
 
-                    <div class="sidebar-user-subtitle">Super Admin</div>
+                    <div class="sidebar-user-subtitle">Admin</div>
+                
                 </div>
+          
             </div>
+      
+
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-header">
@@ -117,13 +144,13 @@ function Navbar({  }) {
 
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="/student">
-                                <i class="align-middle" data-feather="user"></i> <span class="align-middle">Student</span>
+                                <i class="align-middle" data-feather="user"></i> <span class="align-middle" onClick={handleStudentClick} >Student</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="/enrollcourse">
-                                <i class="align-middle" data-feather="user"></i> <span class="align-middle">EnrollCourse</span>
+                                <i class="align-middle" data-feather="user"></i> <span class="align-middle" onClick={handleEnrollCourseClick} >EnrollCourse</span>
                             </a>
                         </li>
 
@@ -133,14 +160,14 @@ function Navbar({  }) {
                 </li>
 
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="/course/approvelist">
-                        <i class="align-middle" data-feather="map"></i> <span class="align-middle">Courses<span id="courseCount" class="sidebar-badge badge bg-primary"></span></span>
+                    <a class="sidebar-link" href="/courses">
+                        <i class="align-middle" data-feather="map"></i> <span class="align-middle" onClick={handleCoursesClick}  >Courses<span id="courseCount" class="sidebar-badge badge bg-primary"></span></span>
                     </a>
                 </li>
 
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="/exam/approvelist">
-                        <i class="align-middle" data-feather="map"></i> <span class="align-middle">Exams<span id="examCount" class="sidebar-badge badge bg-primary"></span></span>
+                    <a class="sidebar-link" href="/exams">
+                        <i class="align-middle" data-feather="map"></i> <span class="align-middle" onClick={handleExamsClick} >Exams<span id="examCount" class="sidebar-badge badge bg-primary"></span></span>
                     </a>
                 </li>
               
@@ -149,8 +176,8 @@ function Navbar({  }) {
                             Exam
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="/exam">
-                                <i class="align-middle" data-feather="edit"></i> <span class="align-middle">Setup</span>
+                            <a class="sidebar-link" href="/setup">
+                                <i class="align-middle" data-feather="edit"></i> <span class="align-middle" onClick={handleSetupClick} >Setup</span>
                             </a>
                 </li>
             

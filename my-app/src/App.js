@@ -1,10 +1,6 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
-// import Dashboard from './component/Dashboard';
-// import Navbar  from './component/Navbar';
-// import HeaderNav  from './component/HeaderNav';
-// import FooterNav from './component/FooterNav';
 import Login from './component/Login';
 import Home from './Home.jsx';
 import Department from './component/Department/Department.jsx';
@@ -12,27 +8,17 @@ import Subject from './component/Subject/Subject.jsx';
 import Teacher from './component/Teacher/Teacher.jsx';
 import AdminUser from './component/AdminUser/AdminUser.jsx';
 import Course from './component/Course/Course.jsx';
-import { useState, useEffect } from 'react';
+import Student from './component/Student/Student.jsx';
 import DepartmentCreate from './component/Department/DepartmentCreate.jsx';
-// import PrivateRoute from './PrivateRoute.jsx';
+import DepartmentEdit from './component/Department/DepartmentEdit.jsx';
+import DepartmentDetails from './component/Department/DepartmentDetails.jsx';
+import DepartmentDelete from './component/Department/DepartmentDelete.jsx';
+import EnrollCourse from './component/EnrollCourse/EnrollCourse.jsx';
+import Courses from './component/Courses/Courses.jsx';
+import Exams from './component/Exams/Exams.jsx';
+import Setup from './component/Setup/Setup.jsx';
+
 function App() {
-
-
-  const [isLoggedIn, setIsLoggedIn] = useState(() => {
-    return localStorage.getItem("isLoggedIn") === "true";
-  });
-
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-    localStorage.setItem("isLoggedIn", "true"); // Save login state to localStorage
-  };
-
-  useEffect(() => {
-    if (!isLoggedIn) {
-      localStorage.removeItem("isLoggedIn");
-    }
-  }, [isLoggedIn]);
-
 
   return (
 
@@ -44,9 +30,17 @@ function App() {
           <Route path="/teacher" element={<Teacher />} />
           <Route path="/adminuser" element={<AdminUser />} />
           <Route path="/course" element={<Course />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/" element={<Login />} /> 
           <Route path="/home" element={<Home />} /> 
+          <Route path="/student" element={<Student />} /> 
+          <Route path="/exams" element={<Exams />} /> 
+          <Route path="/enrollcourse" element={<EnrollCourse />} /> 
+          <Route path="/setup" element={<Setup />} /> 
           <Route path="/departmentcreate" element={<DepartmentCreate />} /> 
+          <Route path="/dedit/123" element={<DepartmentEdit />} />
+          <Route path="/dview/123" element={<DepartmentDetails />} />
+          <Route path="/ddelete/123" element={<DepartmentDelete />} />
           
           
         </Routes>
