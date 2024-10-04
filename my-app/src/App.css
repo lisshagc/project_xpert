@@ -33,7 +33,7 @@ html, body {
   flex-direction: column; */
 }
 
-div#Dashboard {
+div.Dashboard {
   margin-left: 3%;
   width: 80%;
   

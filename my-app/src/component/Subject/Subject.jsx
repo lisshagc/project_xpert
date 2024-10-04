@@ -17,7 +17,7 @@ function Subject() {
               <div className="row" id="Headernav">
                 <HeaderNav />
               </div>
-              <div id="Dashboard" className="row mt-5">
+              <div id="SubjectContent" className="row mt-5 Dashboard">
                 <SubjectContent />              
               </div>
               

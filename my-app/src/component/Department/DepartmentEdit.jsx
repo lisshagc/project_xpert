@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import './Department.js';
 
 function DepartmentEdit() {
   const { id } = useParams();
