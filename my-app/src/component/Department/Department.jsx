@@ -19,7 +19,7 @@ function Department() {
               <div className="row" id="Headernav">
                 <HeaderNav />
               </div>
-              <div id="departmentcontent" className="row mt-5">
+              <div id="Dashboard" className="row mt-5">
                 <DepartmentContent />              
               </div>
               {/* <div id="departmentcreate" className="row mt-5">
